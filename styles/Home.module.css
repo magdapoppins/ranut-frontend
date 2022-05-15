@@ -37,3 +37,28 @@
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
+@keyframes falling {
+  from {
+    transform: translateY(-40vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.rain {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  animation: rotating 1s linear infinite, falling 10s linear infinite;
+}
